@@ -16,6 +16,8 @@
 		D722A27A23922E84001754ED /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A27923922E84001754ED /* TasksViewController.swift */; };
 		D76B35EA239239F600CFD214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76B35E8239239F600CFD214 /* Main.storyboard */; };
 		D76B35EE2392595D00CFD214 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D76B35ED2392595D00CFD214 /* GoogleService-Info.plist */; };
+		D7DF8E122393135300D4EA45 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF8E112393135300D4EA45 /* Task.swift */; };
+		D7DF8E142393135900D4EA45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DF8E132393135900D4EA45 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D722A27923922E84001754ED /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		D76B35E8239239F600CFD214 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		D76B35ED2392595D00CFD214 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D7DF8E112393135300D4EA45 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D7DF8E132393135900D4EA45 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		D722A26423920E0F001754ED /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				D7DF8E102393133C00D4EA45 /* Models */,
 				D722A27B23922EC2001754ED /* Controllers */,
 				D722A27C23922EDA001754ED /* Supfiles */,
 			);
@@ -102,6 +107,15 @@
 				D76B35ED2392595D00CFD214 /* GoogleService-Info.plist */,
 			);
 			path = Supfiles;
+			sourceTree = "<group>";
+		};
+		D7DF8E102393133C00D4EA45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7DF8E112393135300D4EA45 /* Task.swift */,
+				D7DF8E132393135900D4EA45 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FC8248823903E29D15619472 /* Pods */ = {
@@ -231,6 +245,8 @@
 			files = (
 				D722A26A23920E0F001754ED /* LoginViewController.swift in Sources */,
 				D722A27A23922E84001754ED /* TasksViewController.swift in Sources */,
+				D7DF8E142393135900D4EA45 /* User.swift in Sources */,
+				D7DF8E122393135300D4EA45 /* Task.swift in Sources */,
 				D722A26623920E0F001754ED /* AppDelegate.swift in Sources */,
 				D722A26823920E0F001754ED /* SceneDelegate.swift in Sources */,
 			);
