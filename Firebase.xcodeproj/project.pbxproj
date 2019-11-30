@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D722A26623920E0F001754ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A26523920E0F001754ED /* AppDelegate.swift */; };
 		D722A26823920E0F001754ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A26723920E0F001754ED /* SceneDelegate.swift */; };
-		D722A26A23920E0F001754ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A26923920E0F001754ED /* ViewController.swift */; };
-		D722A26D23920E0F001754ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D722A26B23920E0F001754ED /* Main.storyboard */; };
+		D722A26A23920E0F001754ED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A26923920E0F001754ED /* LoginViewController.swift */; };
 		D722A26F23920E10001754ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D722A26E23920E10001754ED /* Assets.xcassets */; };
 		D722A27223920E10001754ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D722A27023920E10001754ED /* LaunchScreen.storyboard */; };
+		D722A27A23922E84001754ED /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722A27923922E84001754ED /* TasksViewController.swift */; };
+		D76B35E9239239F600CFD214 /* TasksViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B35E7239239F600CFD214 /* TasksViewController copy.swift */; };
+		D76B35EA239239F600CFD214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76B35E8239239F600CFD214 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D722A26223920E0F001754ED /* Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D722A26523920E0F001754ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D722A26723920E0F001754ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D722A26923920E0F001754ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D722A26C23920E0F001754ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D722A26923920E0F001754ED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D722A26E23920E10001754ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D722A27123920E10001754ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D722A27323920E10001754ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D722A27923922E84001754ED /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		D76B35E7239239F600CFD214 /* TasksViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TasksViewController copy.swift"; path = "../../../../../.Trash/TasksViewController copy.swift"; sourceTree = "<group>"; };
+		D76B35E8239239F600CFD214 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		D722A26423920E0F001754ED /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				D722A27B23922EC2001754ED /* Controllers */,
+				D722A27C23922EDA001754ED /* Supfiles */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		D722A27B23922EC2001754ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D722A26923920E0F001754ED /* LoginViewController.swift */,
+				D722A27923922E84001754ED /* TasksViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D722A27C23922EDA001754ED /* Supfiles */ = {
+			isa = PBXGroup;
+			children = (
 				D722A26523920E0F001754ED /* AppDelegate.swift */,
 				D722A26723920E0F001754ED /* SceneDelegate.swift */,
-				D722A26923920E0F001754ED /* ViewController.swift */,
-				D722A26B23920E0F001754ED /* Main.storyboard */,
+				D76B35E8239239F600CFD214 /* Main.storyboard */,
+				D76B35E7239239F600CFD214 /* TasksViewController copy.swift */,
 				D722A26E23920E10001754ED /* Assets.xcassets */,
 				D722A27023920E10001754ED /* LaunchScreen.storyboard */,
 				D722A27323920E10001754ED /* Info.plist */,
 			);
-			path = Firebase;
+			path = Supfiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +149,7 @@
 			files = (
 				D722A27223920E10001754ED /* LaunchScreen.storyboard in Resources */,
 				D722A26F23920E10001754ED /* Assets.xcassets in Resources */,
-				D722A26D23920E0F001754ED /* Main.storyboard in Resources */,
+				D76B35EA239239F600CFD214 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D722A26A23920E0F001754ED /* ViewController.swift in Sources */,
+				D722A26A23920E0F001754ED /* LoginViewController.swift in Sources */,
+				D722A27A23922E84001754ED /* TasksViewController.swift in Sources */,
 				D722A26623920E0F001754ED /* AppDelegate.swift in Sources */,
+				D76B35E9239239F600CFD214 /* TasksViewController copy.swift in Sources */,
 				D722A26823920E0F001754ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +171,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D722A26B23920E0F001754ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D722A26C23920E0F001754ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D722A27023920E10001754ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Firebase/Info.plist;
+				INFOPLIST_FILE = Firebase/Supfiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Firebase/Info.plist;
+				INFOPLIST_FILE = Firebase/Supfiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
