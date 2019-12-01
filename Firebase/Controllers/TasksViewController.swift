@@ -26,9 +26,12 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = .clear
+        let task = tasks[indexPath.row]
         cell.textLabel?.textColor = .white
-        let taskTitle = tasks[indexPath.row].title
+        let taskTitle = task.title
+        let isCompleted = task.completed
         cell.textLabel?.text = taskTitle
+        toggleCompletion(cell, isCompleted: isCompleted)
         
         return cell
     }
@@ -56,6 +59,31 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self?.tableView.reloadData()
         }
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let task = tasks[indexPath.row]
+            task.ref?.removeValue()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        let task = tasks[indexPath.row]
+        let isCompleted = !task.completed
+        
+        toggleCompletion(cell, isCompleted: isCompleted)
+        task.ref?.updateChildValues(["completed": isCompleted])
+    }
+    
+    func toggleCompletion(_ cell: UITableViewCell, isCompleted: Bool) {
+        cell.accessoryType = isCompleted ? .checkmark : .none
+    }
+    
     // удаляем наблюдатель
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
