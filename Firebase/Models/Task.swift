@@ -31,4 +31,8 @@ struct Task {
         ref = snapshot.ref
     }
     
+    func convertToDictionary() -> Any {
+        return ["title": title, "userId": userId, "completed": completed]
+    }
+    
 }
